@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 mt-3 text-white text-center">
+                <h1 id="title">Digprom Survey Form</h1>
+                <p id="description">This is to collect data from our users who has interest in testin our new brand</p>
+            </div>
+            <div class="survey col-lg-7 text-white">
+                <form action="" id="survey-form">
+                    <label for="name" class="details" id="name-label">Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+
+
+                    <label for="Email" class="details" id="email-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your Email" required>
+
+                    <label for="number" class="details" id="number-label">Age</label>
+                    <input type="number" id="number" class="form-control" placeholder="Enter your Age" min="18" max="45">
+
+                    <label for="role" class="details">Which option best describes your current role?</label>
+                    <select name="role" id="dropdown" class="form-control">
+                        <option value="Student">Select your current role</option>
+                        <option value="Student">Student</option>
+                        <option value="Full time">Full time job</option>
+                        <option value="Per time">Per time job</option>
+                        <option value="Self employed">Self employed</option>
+                        <option value="prefer">Prefer Not Say</option>
+                        <option value="Other">Other</option>
+                    </select>
+
+                    <label for="Gender" class="details" style="display: block;">Can you pls identifer which gender you are?</label>
+                    <input type="radio" name="gender" value="male" checked><label for="male">Male</label><br>
+                    <input type="radio" name="gender" value="female"><label for="female">Female</label><br>
+                    <input type="radio" name="gender" value="custom"><label for="custom">Custom</label><br>
+                    <input type="radio" name="gender" value="rather not"><label for="rather not">Rather not say</label><br>
+
+                    <label for="hobby" class="details" style="display: block;">Select your area of interest <span style="font-size: 15px;">(select all that apply)</span></label>
+                    <input type="checkbox" name="" id="" value="Reading" checked> <label for="Reading">Reading</label><br>
+                    <input type="checkbox" name="" id="" value="Football"> <label for="Football">Football</label><br>
+                    <input type="checkbox" name="" id="" value="Basketball"> <label for="Basketball">Basketball</label><br>
+                    <input type="checkbox" name="" id="" value="Volleyball"> <label for="Volleyball">Volleyball</label><br>
+                    <input type="checkbox" name="" id="" value="Researching"> <label for="Researching">Researching</label><br>
+                    <input type="checkbox" name="" id="" value="Praying"> <label for="Praying">Praying</label><br>
+                    <input type="checkbox" name="" id="" value="Brainstorming"> <label for="Brainstorming">Brainstorming</label><br>
+                    <input type="checkbox" name="" id="" value="Meditating"> <label for="Meditating">Meditating</label><br>
+                    <input type="checkbox" name="" id="" value="Blogging"> <label for="Blogging">Blogging</label><br>
+                    <input type="checkbox" name="" id="" value="Hiking"> <label for="Hiking">Hiking</label><br>
+                    <input type="checkbox" name="" id="" value="Gardening"> <label for="Gardening">Gardening</label><br>
+                    <input type="checkbox" name="" id="" value="Running"> <label for="Running">Running</label><br>
+                    <input type="checkbox" name="" id="" value="Dancing"> <label for="Dancing">Dancing</label><br>
+                    <input type="checkbox" name="" id="" value="Singing"> <label for="Singing">Singing</label><br>
+                    <input type="checkbox" name="" id="" value="Music"> <label for="Music">Listening to Music</label><br>
+                    <input type="checkbox" name="" id="" value="Cooking"> <label for="Cooking">Cooking</label><br>
+                    <label for="message" class="details">Any message or comments?</label> 
+                    <textarea name="" class="form-control" id="" cols="30" rows="5" placeholder="Enter your message here..."></textarea>
+                    <button class="btn btn-primary form-control" id="submit">Submit</button>
+
+
+                </form>
+            </div> 
+            
+        </div>
+    </div>
+</body>
+</html>
